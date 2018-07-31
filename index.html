@@ -14,14 +14,14 @@
         <h1>CoffeeRun</h1>
     </header>
     <section>
-        <form action="">
+        <form action="" class="orderForm">
             <label>
                 <span>Coffee Order</span>
-                <input class="" name="" type="text" required>
+                <input name="order" type="text" required>
             </label>
             <label>
                 <span>Email</span>
-                <input type="email" name="" required>
+                <input type="email" name="email" required>
             </label>
             <div>
                 <span>Sizes</span>
@@ -40,11 +40,17 @@
             </div>
             <label>
                 <span>Caffeine Rating</span>
-                <input type="range" name="">
+                <input type="range" name="rating">
             </label>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
         </form>
     </section>
+    <section>
+        <ul class="orderList"></ul>
+    </section>
     <!-- Scripts -->
+    <script src="https://xavier.fun/jquery"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
